@@ -1,6 +1,7 @@
 # 基于区块链技术的农产品供销管理系统
 ## 项目介绍
-由于项目文件过多,因此直接上传项目了的压缩包。这里不严谨,勿喷。
+由于项目文件过多,因此直接上传项目了的压缩包。这里不严谨,勿喷。另外,该项目只是做到对区块链的数据监控,实际上业务并没有做到有上链需求,但是封装2个交互类,可以直接开箱即用。
+<br>
 基于农产品技术的供销管理系统。采用SpringBoot作为基础框架，数据层框架为Mybatis、Spring Sercurity作安全框架、用Redis做缓存、部分业务数据通过fisco-bcos(区块链网络)做持久化化处理，Solidity编写智能合约、主要业务数据用MySQL做持久化处理。前端：采用Vue作为基础框架。使用vue-router做路由控制、vuex做状态管理、echars做图表渲染、axios负责前后端交互。
 
 ## 视频效果展示
@@ -24,7 +25,8 @@ webase-front 节点前置服务搭建：https://blog.csdn.net/dyw_666666/article
 ![image](https://github.com/junzhumio/BAP/assets/119744044/cb60c07d-9630-4f58-8d49-d5a3c7ca9eda)
 
 将application.yml中的配置改成上述fisco网络搭建时候的配置。
-![image](https://github.com/junzhumio/BAP/assets/119744044/7aeb23a4-4e15-4bb0-a8ca-76c05c77c224)
+![image](https://github.com/junzhumio/BAP/assets/119744044/0c5e7d71-fa06-41f0-870d-29fec2f05f6c)
+
 
 数据监控页面账号。我们可以在common模块下面如下文件修改账号密码。
 
