@@ -4,7 +4,7 @@
 
 ## 涉及用到的技术栈
 
-(浅浅说一下,我们拿了Fisco-bcos的数据，但是并没有部署合约,就是只实现了监控的效果。但是封装了2连接工具类,开箱即用，看下面图片。
+(浅浅说一下,我们拿了Fisco-bcos的数据，但是并没有部署合约,就是只实现了区块链网络监控的效果。但是封装了2连接工具类,开箱即用，看下面图片。
 
 再提一句,Druid连接池跟fisco-java-sdk冲突,我合约交互用的WeFrontService来实现,因此数据库配置那里就没改,如果想用ContractService,就是将数据库连接池配置改成其他连接池配置)
 
@@ -18,13 +18,15 @@
 
 先说一下,本系统,用到了Fisco-bcos的中间件平台webase的子系统webase-front。这里不做赘述。
 
+服务端：
+
 1.Fisco配置更改：
 
 将下图fisco配置更改为自己搭建的fisco链、webase-front配置。如果要进行合约部署,并且要用WeFrontService合约交互，将合约配置里面填上
 
 ![1715074605894](assets/1715074605894.png)
 
-2.更改MySQL、Redis服务器的连接配置
+2.更改MySQL、Redis服务器的连接配置。本地运行创建ap数据库运行ap.sql文件。
 
 3.德鲁伊监控配置更改：
 
@@ -32,7 +34,9 @@
 
 ![1715076791950](assets/1715076791950.png)
 
-4.swagger配置修改
+4.阿里云OSS配置更改。在common模块下面util包下面的OSSUtil更改自己的配置。
+
+5.swagger配置修改
 
 登录系统之后,访问http://localhost:8110/swagger-ui.html进入以下页面。
 
@@ -42,7 +46,11 @@
 
 ![1715084059128](assets/1715084059128.png)
 
+启动back-me项目下面admin模块
+客户端：
+用控制台打开front-me目录下的front-admin目录
 ```
+# 先执行
 npm i
 # 之后执行
 npm run serve
@@ -89,8 +97,6 @@ npm run serve
 ### 缓存监控
 
 ![1715076152054](assets/1715076152054.png)
-
-<video src="../../../Downloads/327931681-346fddd1-25fb-4a59-80f4-438f04e2c7c8.mp4"></video>
 
 ### 个人中心
 
