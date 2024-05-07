@@ -1,42 +1,98 @@
-# 基于区块链技术的农产品供销管理系统
-## 项目介绍
-由于项目文件过多,因此直接上传项目了的压缩包。这里不严谨,勿喷。另外,该项目只是做到对区块链的数据监控,实际上业务并没有做到有上链需求,但是封装2个交互类,可以直接开箱即用。
-<br>
-基于农产品技术的供销管理系统。采用SpringBoot作为基础框架，数据层框架为Mybatis、Spring Sercurity作安全框架、用Redis做缓存、部分业务数据通过fisco-bcos(区块链网络)做持久化化处理，Solidity编写智能合约、主要业务数据用MySQL做持久化处理。前端：采用Vue作为基础框架。使用vue-router做路由控制、vuex做状态管理、echars做图表渲染、axios负责前后端交互。
+# 农产品供销管理系统
 
-## 视频效果展示
-该视频效果展示,为之前测试写的,因此标题并没有改过来。大部分功能已经实现。
+先说一下。该项目是一个大部分可复用的管理系统模版,我觉得。本来是一个完整系统,但是前台不想继续写了,就这样吧。大部分功能写上并已经实现。
 
+## 涉及用到的技术栈
 
-https://github.com/junzhumio/BAP/assets/119744044/346fddd1-25fb-4a59-80f4-438f04e2c7c8
+(浅浅说一下,我们拿了Fisco-bcos的数据，但是并没有部署合约,就是只实现了监控的效果。但是封装了2连接工具类,开箱即用，看下面图片。
 
+再提一句,Druid连接池跟fisco-java-sdk冲突,我合约交互用的WeFrontService来实现,因此数据库配置那里就没改,如果想用ContractService,就是将数据库连接池配置改成其他连接池配置)
 
-## 项目安装以及定义
-### 区块链网络搭建
-fisco-bcos介绍：https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/index.html
-<br>
-fisco-bcos 4节点区块链网络搭建：https://blog.csdn.net/qq_63235624/article/details/130910189
-<br>
-webase-front 节点前置服务搭建：https://blog.csdn.net/dyw_666666/article/details/124577214
-### 后端配置更改
-用IDEA打开back-me项目。将application-druid.yml主库数据源中的url、username、password改成用户自己mysql数据库的配置。如下面所示:
-![image](https://github.com/junzhumio/BAP/assets/119744044/44c304e5-f6d8-468f-bcc6-7647529fa2d6)
-将application-redis.yml中的host、port、password、database改成自己redis服务器的配置。
-![image](https://github.com/junzhumio/BAP/assets/119744044/cb60c07d-9630-4f58-8d49-d5a3c7ca9eda)
+![image](https://github.com/junzhumio/goods-manage/assets/119744044/4acfda6c-d226-4b06-8318-2c67d735031a)
 
-将application.yml中的配置改成上述fisco网络搭建时候的配置。
-![image](https://github.com/junzhumio/BAP/assets/119744044/0c5e7d71-fa06-41f0-870d-29fec2f05f6c)
+服务端：SpringBoot、SpringSecurity、Mybatis-plus、Redis、Fisco-Bcos、Druid、Hutool、阿里云OSS
+
+客户端：Vue、Vuex、Vue-router、Element-UI、Echars
+
+## 安装使用
+
+先说一下,本系统,用到了Fisco-bcos的中间件平台webase的子系统webase-front。这里不做赘述。
+
+1.Fisco配置更改：
+
+将下图fisco配置更改为自己搭建的fisco链、webase-front配置。如果要进行合约部署,并且要用WeFrontService合约交互，将合约配置里面填上
+
+![image](https://github.com/junzhumio/goods-manage/assets/119744044/bc9f2b2d-1790-4986-9a60-f53c2b523666)
 
 
-数据监控页面账号。我们可以在common模块下面如下文件修改账号密码。
+2.更改MySQL、Redis服务器的连接配置
 
-OOS对象存储服务,可找到相应工具类,将替换成自己的配置。
+3.德鲁伊监控配置更改：
 
-### 前端配置更改
-用VSCode打开front-me项目。
-<br>
-在终端先输入:
-npm i
-<br>
-完成后,输入:
-npm run serve
+在common模块下面,该位置。默认是账号：admin,密码: 123456
+
+![image](https://github.com/junzhumio/goods-manage/assets/119744044/48e9d17e-eb24-4592-856b-049f72ffcc05)
+
+
+4.swagger配置修改
+
+登录系统之后,访问<span>http://localhost:8110/swagger-ui.html</span>进入以下页面。
+
+![image](https://github.com/junzhumio/goods-manage/assets/119744044/59012f6f-eae9-458e-9b77-ed91e4ec2f87)
+
+
+默认无法接口调用,需要：随便一个点击接口调用,点击红色叹号、填写Bearer+登录token、点击Authorize之后,即可请求携带token，才能进行接口调用。
+
+![image](https://github.com/junzhumio/goods-manage/assets/119744044/e1967b17-aa5b-4657-b4f0-94678c1b9cf1)
+
+
+
+## 项目演示
+
+这里只演示部分页面
+### 演示视频
+我这里只是改了名字,还是那个项目:
+<video src="https://github.com/junzhumio/BAP/assets/119744044/346fddd1-25fb-4a59-80f4-438f04e2c7c8"></video>
+
+### 登录
+
+![image](https://github.com/junzhumio/goods-manage/assets/119744044/3f775455-b6f8-49ea-859c-df7113cd6ee3)
+
+
+### 注册
+
+![1715074960389](https://github.com/junzhumio/goods-manage/assets/119744044/9bb336a7-55f6-4704-855b-edbcea21eeca)
+
+
+### 首页
+
+![1715075616524](https://github.com/junzhumio/goods-manage/assets/119744044/85b42969-b37e-4e33-9ac2-4599911ca1ef)
+
+
+### 用户管理
+
+就是展示一些前台用户信息,还有对用户的增删改查。
+
+![1715075279497](https://github.com/junzhumio/goods-manage/assets/119744044/155a769b-85e7-446c-87ec-bc5ed6235de5)
+
+
+### 服务监控
+
+![1715075796103](https://github.com/junzhumio/goods-manage/assets/119744044/589b7d94-f940-4fb8-86fb-9ec905a28202)
+
+
+### 区块链监控
+
+输入块高,点击查询,可显示区块信息
+
+![1715076209454](https://github.com/junzhumio/goods-manage/assets/119744044/7e64e161-5b8c-4476-8c65-7819ba0f6c2a)
+
+
+### 缓存监控
+
+![1715076152054](https://github.com/junzhumio/goods-manage/assets/119744044/6437d561-b494-4c40-ad61-700cab03174b)
+
+
+### 个人中心
+
+![1715076237946](https://github.com/junzhumio/goods-manage/assets/119744044/afd5383d-dc50-4d57-9138-69ff73e9fbc5)
