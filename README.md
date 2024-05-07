@@ -47,6 +47,7 @@
 ![1715084059128](assets/1715084059128.png)
 
 启动back-me项目下面admin模块
+
 客户端：
 用控制台打开front-me目录下的front-admin目录
 ```
