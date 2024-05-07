@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>back-me</artifactId>
+		<groupId>com.qhx</groupId>
+		<version>1.0</version>
+	</parent>
+
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>admin</artifactId>
+
+	<dependencies>
+		<!-- common -->
+		<dependency>
+			<groupId>com.qhx</groupId>
+			<artifactId>common</artifactId>
+		</dependency>
+		<!--系统监控-->
+		<dependency>
+			<groupId>com.github.oshi</groupId>
+			<artifactId>oshi-core</artifactId>
+			<version>6.4.8</version>
+		</dependency>
+
+		<!--开发所用依赖- - - -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+	</dependencies>
+
+
+</project>

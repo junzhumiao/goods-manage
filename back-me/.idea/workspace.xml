@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc228ada-9ed5-4769-93a5-ed29d3e4fe2e" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-me.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-me.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SORT_ALPHABETICALLY" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.2.20/druid-1.2.20.jar!/support/http/resources/login.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2cu6pQDFzFD9DDJV5h5zmWJuFkY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/main/java/com/qhx/admin/config/fisco" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.5559482" />
+    <property name="rearrange.code.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="actions.on.save" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.qhx.admin.model.vo.index.main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\qhx20\Desktop\my-project\农产品自主供销小程序\back-me\admin\src\main\java\com\qhx\admin\config\fisco" />
+      <recent name="C:\Users\qhx20\Desktop\my-project\农产品自主供销小程序\back-me\admin" />
+      <recent name="C:\Users\qhx20\Desktop\my-project\农产品自主供销小程序\back-me\admin\src\main\resources" />
+      <recent name="C:\Users\qhx20\Desktop\my-project\农产品自主供销小程序\back-me\admin\src\main\java\com\qhx\admin\controller\system" />
+      <recent name="C:\Users\qhx20\Desktop\my-project\农产品自主供销小程序\back-me\admin\src\main\java\com\qhx\admin\domain\web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\qhx20\Desktop\my-project\农产品自主供销小程序\back-me\admin\src\main\resources\bin" />
+      <recent name="C:\Users\qhx20\Desktop\my-project\农产品自主供销小程序\back-me\admin\src\main\java\com\qhx\admin\model\vo" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.qhx.client.service" />
+      <recent name="com.qhx.admin.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qhx.admin.config.contract" />
+      <recent name="com.qhx.common.util" />
+      <recent name="com.qhx.client.mapper" />
+      <recent name="com.qhx.client.config.handler" />
+      <recent name="com.qhx.common.domain" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
+    <configuration name="CaptchaService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qhx.admin.service.CaptchaService" />
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qhx.admin.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FarmerVo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qhx.admin.model.vo.FarmerVo" />
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qhx.admin.model.vo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackUserServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qhx.client.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qhx.client.service" />
+      <option name="MAIN_CLASS_NAME" value="com.qhx.client.service.BackUserServiceTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CacheControllerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qhx.admin.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qhx.admin.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.qhx.admin.controller.CacheControllerTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.updateOrderStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qhx.admin.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qhx.admin.service" />
+      <option name="MAIN_CLASS_NAME" value="com.qhx.admin.service.OrderServiceTest" />
+      <option name="METHOD_NAME" value="updateOrderStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qhx.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qhx.admin.AdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.FarmerVo" />
+        <item itemvalue="JUnit.BackUserServiceTest.test" />
+        <item itemvalue="应用程序.CaptchaService" />
+        <item itemvalue="JUnit.OrderServiceTest.updateOrderStatus" />
+        <item itemvalue="JUnit.CacheControllerTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="dc228ada-9ed5-4769-93a5-ed29d3e4fe2e" name="变更" comment="" />
+      <created>1708949312837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708949312837</updated>
+      <workItem from="1708949312837" duration="7249000" />
+      <workItem from="1708986942331" duration="10237000" />
+      <workItem from="1709032983438" duration="6651000" />
+      <workItem from="1709043268374" duration="429000" />
+      <workItem from="1709081169146" duration="21864000" />
+      <workItem from="1709108812882" duration="2836000" />
+      <workItem from="1709113043273" duration="7522000" />
+      <workItem from="1709256778637" duration="30480000" />
+      <workItem from="1709290962812" duration="9064000" />
+      <workItem from="1709340704402" duration="28892000" />
+      <workItem from="1709425760189" duration="12606000" />
+      <workItem from="1709438630714" duration="16075000" />
+      <workItem from="1709510087297" duration="18143000" />
+      <workItem from="1709596987850" duration="18885000" />
+      <workItem from="1709683394804" duration="83000" />
+      <workItem from="1709721996491" duration="12035000" />
+      <workItem from="1709769409654" duration="36186000" />
+      <workItem from="1709856033005" duration="37780000" />
+      <workItem from="1710031335267" duration="33542000" />
+      <workItem from="1710115236445" duration="8205000" />
+      <workItem from="1710210957447" duration="9049000" />
+      <workItem from="1710634891379" duration="13533000" />
+      <workItem from="1710648602703" duration="28539000" />
+      <workItem from="1710720800176" duration="31877000" />
+      <workItem from="1710806986215" duration="20261000" />
+      <workItem from="1710838200173" duration="792000" />
+      <workItem from="1710839080268" duration="536000" />
+      <workItem from="1710839656344" duration="14537000" />
+      <workItem from="1710893232107" duration="15948000" />
+      <workItem from="1710979498730" duration="22443000" />
+      <workItem from="1711076815452" duration="16337000" />
+      <workItem from="1711155271595" duration="16183000" />
+      <workItem from="1711241715599" duration="12389000" />
+      <workItem from="1711325127054" duration="26427000" />
+      <workItem from="1711417106637" duration="26436000" />
+      <workItem from="1711500091063" duration="21606000" />
+      <workItem from="1711584642892" duration="28290000" />
+      <workItem from="1711670394061" duration="19563000" />
+      <workItem from="1711758242351" duration="14302000" />
+      <workItem from="1711849672841" duration="23343000" />
+      <workItem from="1711969636071" duration="3818000" />
+      <workItem from="1712017215564" duration="44000" />
+      <workItem from="1712023358053" duration="998000" />
+      <workItem from="1712116947903" duration="726000" />
+      <workItem from="1712363229265" duration="1000" />
+      <workItem from="1712714540861" duration="1242000" />
+      <workItem from="1712799968548" duration="836000" />
+      <workItem from="1712833682012" duration="2620000" />
+      <workItem from="1713351769969" duration="1599000" />
+      <workItem from="1713487195209" duration="814000" />
+      <workItem from="1713515791917" duration="758000" />
+      <workItem from="1713926342337" duration="6671000" />
+      <workItem from="1714808777752" duration="141000" />
+      <workItem from="1715072600619" duration="11752000" />
+      <workItem from="1715094930314" duration="317000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="com.qhx.common.exception.user.UserException" package="com.qhx.common.exception.user" />
+          <option name="timeStamp" value="8" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="16" />
+        </breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/admin/src/main/java/com/qhx/admin/service/impl/GoodsCategoryServiceImpl.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="okhttp3.internal.http.RealResponseBody" memberName="source" />
+        <PinnedItemInfo parentTag="com.qhx.common.model.PageResult" memberName="data" />
+        <PinnedItemInfo parentTag="com.qhx.common.model.Result" memberName="mes" />
+        <PinnedItemInfo parentTag="java.lang.reflect.Field" memberName="annotations" />
+        <PinnedItemInfo parentTag="okhttp3.Response" memberName="code" />
+        <PinnedItemInfo parentTag="com.qhx.admin.model.to.goods.GoodsTo" memberName="imgUrls" />
+        <PinnedItemInfo parentTag="com.qhx.admin.util.UserUtil" memberName="redisCache" />
+        <PinnedItemInfo parentTag="org.fisco.bcos.sdk.client.ClientImpl" memberName="groupId" />
+        <PinnedItemInfo parentTag="com.aliyun.oss.model.PutObjectResult" memberName="requestId" />
+        <PinnedItemInfo parentTag="com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper" memberName="filters" />
+        <PinnedItemInfo parentTag="com.aliyun.oss.model.OSSObject" memberName="bucketName" />
+        <PinnedItemInfo parentTag="com.aliyun.oss.model.OSSObject" memberName="serverCRC" />
+        <PinnedItemInfo parentTag="com.sun.proxy.$Proxy123" memberName="h" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/back_me$AdminApplication.ic" NAME="AdminApplication 覆盖结果" MODIFIED="1711885524982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qhx.admin.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/back_me$GoodsServiceTest_testGoodsService.ic" NAME="GoodsServiceTest.testGoodsService 覆盖结果" MODIFIED="1711435344631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qhx.admin.service.*</FILTER>
+    </SUITE>
+  </component>
+</project>

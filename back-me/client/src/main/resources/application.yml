@@ -1,0 +1,23 @@
+server:
+  port: 8111
+
+spring:
+
+  profiles:
+    active: druid,redis
+  # swagger(路径) 配置
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+
+# mybatis-plus 我严重怀疑,mybatis-plus默认就是以下作为逻辑删除字段
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deFlag # 全局逻辑删除的实体字段名
+      logic-delete-value: "1" # 逻辑已删除值
+      logic-not-delete-value: "0" # 逻辑未删除值
+
+

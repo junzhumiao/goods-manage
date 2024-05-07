@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin" />
+        <module name="client" />
+        <module name="generator" />
+        <module name="common" />
+        <module name="message" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="14" />
+  </component>
+  <component name="JavacSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+  </component>
+</project>

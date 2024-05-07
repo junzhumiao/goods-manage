@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<description>农产品销售系统</description>
+
+	<groupId>com.qhx</groupId>
+	<artifactId>back-me</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+
+	<modules>
+		<module>common</module>
+		<module>client</module>
+		<module>admin</module>
+		<module>message</module>
+	</modules>
+
+	<properties>
+		<jzm.version>1.0</jzm.version>
+		<java.version>14</java.version>
+
+		<druid.version>1.2.20</druid.version>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
+		<spring-boot.version>2.6.13</spring-boot.version>
+		<mybatis-plus.version>3.5.3.1</mybatis-plus.version>
+		<boot.redis.version></boot.redis.version>
+		<commons-pool2.version>2.6.1</commons-pool2.version>
+		<mysql-j.version>8.0.31</mysql-j.version>
+		<dynamic-datasource.version>3.5.2</dynamic-datasource.version>
+
+		<swagger.version>2.7.0</swagger.version>
+		<pagehelper.boot.version>1.4.7</pagehelper.boot.version>
+		<fastjson.version>2.0.19.graal</fastjson.version>
+		<hutool-all.version>5.7.20</hutool-all.version>
+		<jjwt.version>0.9.1</jjwt.version>
+		<oshi-core.version>6.4.8</oshi-core.version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<!--父模块:依赖声明-->
+	<dependencyManagement>
+		<dependencies>
+
+			<!--spring-boot-->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!--mybatis-plus-->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-boot-starter</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+
+			<!-- mybatis-plus-generate -->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-generator</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+
+			<!-- 阿里数据库连接池 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid-spring-boot-starter</artifactId>
+				<version>${druid.version}</version>
+			</dependency>
+
+			<!--mysql-j-->
+			<dependency>
+				<groupId>com.mysql</groupId>
+				<artifactId>mysql-connector-j</artifactId>
+				<version>${mysql-j.version}</version>
+			</dependency>
+
+			<!--	多数据源-->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+				<version>${dynamic-datasource.version}</version>
+			</dependency>
+
+			<!-- pagehelper 分页插件 -->
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper-spring-boot-starter</artifactId>
+				<version>${pagehelper.boot.version}</version>
+			</dependency>
+
+			<!--swagger 依赖-->
+			<dependency><!--添加Swagger依赖 -->
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+			<dependency><!--添加Swagger-UI依赖 -->
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+
+			<!-- 阿里JSON解析器 -->
+			<dependency>
+				<groupId>com.alibaba.fastjson2</groupId>
+				<artifactId>fastjson2</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+
+			<!-- hutool-all -->
+			<dependency>
+				<groupId>cn.hutool</groupId>
+				<artifactId>hutool-all</artifactId>
+				<version>${hutool-all.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>cn.hutool</groupId>
+						<artifactId>hutool-json</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<!--commons-pool2-->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-pool2</artifactId>
+				<version>${commons-pool2.version}</version>
+			</dependency>
+
+			<!-- Token生成与解析-->
+			<dependency>
+				<groupId>io.jsonwebtoken</groupId>
+				<artifactId>jjwt</artifactId>
+			</dependency>
+
+			<!--lombok-->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.18.26</version>
+			</dependency>
+
+			<!--common-->
+			<dependency>
+				<groupId>com.qhx</groupId>
+				<artifactId>common</artifactId>
+				<version>${jzm.version}</version>
+			</dependency>
+
+			<!--当今版本,security因为jdk8缺失引发的依赖-->
+			<dependency>
+				<groupId>javax.xml.bind</groupId>
+				<artifactId>jaxb-api</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-impl</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-core</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.activation</groupId>
+				<artifactId>activation</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>2.5</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.oshi</groupId>
+				<artifactId>oshi-core</artifactId>
+				<version>${oshi-core.version}</version>
+			</dependency>
+
+
+
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!--maven打包插件-->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+
+				<!--spring-boot-加载插件 -->
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<version>${spring-boot.version}</version>
+					<configuration>
+						<mainClass>com.qhx.admin.AdminApplication</mainClass>
+						<skip>true</skip>
+					</configuration>
+					<executions>
+						<execution>
+							<id>repackage</id>
+							<goals>
+								<goal>repackage</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<!--依赖仓库-->
+	<repositories>
+		<repository>
+			<id>public</id>
+			<name>aliyun nexus</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
+	<!--依赖插件仓库-->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>public</id>
+			<name>aliyun nexus</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>

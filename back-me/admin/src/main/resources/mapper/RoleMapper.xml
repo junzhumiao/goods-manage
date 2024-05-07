@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qhx.admin.mapper.RoleMapper">
+
+	<select id="getPathsByUserId" resultType="java.lang.String" parameterType="int">
+		SELECT `ap_menu`.menu_path FROM `ap_menu`  LEFT JOIN `ap_role_menu`
+		ON `ap_menu`.menu_id = `ap_role_menu`.menu_id LEFT JOIN `ap_role`
+		ON `ap_role_menu`.role_id = `ap_role`.role_id LEFT JOIN `ap_user_role`
+		ON `ap_role`.role_id = `ap_user_role`.role_id LEFT JOIN `ap_back_user`
+		ON `ap_user_role`.user_id = `ap_back_user`.user_id WHERE `ap_back_user`.user_id = #{userId}
+	</select>
+</mapper>

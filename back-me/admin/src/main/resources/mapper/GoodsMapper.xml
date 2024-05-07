@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qhx.admin.mapper.GoodsMapper">
+
+	<select id="selectAllGoods" resultType="com.qhx.admin.domain.Goods">
+		SELECT DISTINCT `ap_goods`.* FROM `ap_goods_category`
+		LEFT JOIN `ap_goods` ON `ap_goods`.goods_id = `ap_goods_category`.goods_id
+		LEFT JOIN `ap_category` ON `ap_category`.category_id = `ap_goods_category`.category_id
+		WHERE  `ap_goods`.del_flag = '0'
+		<if test="map.q.goodsName != null and map.q.goodsName != ''">
+			AND `ap_goods`.goods_name LIKE   concat('%', #{map.q.goodsName}, '%')
+		</if>
+		<if test="map.q.categoryId != null ">
+			AND `ap_category`.category_id = #{map.q.categoryId}
+		</if>
+		<if test="map.q.goodsNum != null and map.q.goodsNum != ''">
+			AND `ap_goods`.goods_num  = #{map.q.goodsNum}
+		</if>
+		<if test="map.q.status != null and map.q.status != ''">
+			AND `ap_goods`.status  = #{map.q.status}
+		</if>
+		<if test="map.q.minPrice != null ">
+			<![CDATA[
+		  		AND `ap_goods`.price  >= #{map.q.minPrice}
+		    ]]>
+		</if>
+		<if test="map.q.maxPrice!= null ">
+			<![CDATA[
+		  		AND `ap_goods`.price  <= #{map.q.maxPrice}
+		    ]]>
+		</if>
+		<if test="map.getId!= null ">
+			AND `ap_goods`.shop_id  = #{map.userId}
+		</if>
+	</select>
+</mapper>
