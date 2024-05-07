@@ -63,8 +63,11 @@ npm run serve
 这里只演示部分页面
 
 ### 项目视频演示
+视频项目标题因需求改了。但实际一个项目。
 
-<video src="assets/show.mp4"></video>
+[assets/show.mp4](https://github.com/junzhumiao/goods-manage/assets/119744044/45ecc7f6-5fc0-4420-94de-2796ec882ff2)
+
+
 
 ### 登录
 
