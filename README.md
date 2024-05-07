@@ -17,6 +17,9 @@
 ## 安装使用
 
 先说一下,本系统,用到了Fisco-bcos的中间件平台webase的子系统webase-front。这里不做赘述。
+<br>
+服务端:
+<br>
 
 1.Fisco配置更改：
 
@@ -44,8 +47,17 @@
 默认无法接口调用,需要：随便一个点击接口调用,点击红色叹号、填写Bearer+登录token、点击Authorize之后,即可请求携带token，才能进行接口调用。
 
 ![image](https://github.com/junzhumio/goods-manage/assets/119744044/e1967b17-aa5b-4657-b4f0-94678c1b9cf1)
+<br>
+客户端:
+<br>
 
-
+用控制台打开front-me里面front-admin目录
+```
+# 先执行
+npm i
+# 之后执行
+npm run serve
+```
 
 ## 项目演示
 
