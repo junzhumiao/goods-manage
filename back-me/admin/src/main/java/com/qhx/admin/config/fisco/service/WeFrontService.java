@@ -36,12 +36,13 @@ public class WeFrontService
     @Autowired
     private FiscoConfig fiscoConfig;
 
-     private String commonReq(String userAddress, String funcName, List funcParam) {
-         JSONObject data = new JSONObject();
-         FiscoConfig f  = fiscoConfig;
-         ContractConfig c = f.getContract();
-         JSONArray abiJSON = JSONUtil.parseArray(c.getAbi());
-         data.putOpt("groupId", f.getGroupId());
+    private String commonReq(String userAddress, String funcName, List funcParam)
+    {
+        JSONObject data = new JSONObject();
+        FiscoConfig f = fiscoConfig;
+        ContractConfig c = f.getContract();
+        JSONArray abiJSON = JSONUtil.parseArray(c.getAbi());
+        data.putOpt("groupId", f.getGroupId());
         data.putOpt("user", userAddress);
         data.putOpt("contractName", c.getName());
         data.putOpt("funcName", funcName);
@@ -54,28 +55,31 @@ public class WeFrontService
         return response.body();
     }
 
-    public ContractResponse sendTranGetValues(String to, String funcName, List funcParam){
+    public ContractResponse sendTranGetValues(String to, String funcName, List funcParam)
+    {
         String res = commonReq(to, funcName, funcParam);
         JSONObject jsonObj = JSONUtil.parseObj(res);
         ContractResponse cr = new ContractResponse();
         // 错误消息
-        if(jsonObj.containsKey(tran_message) && jsonObj.getStr(tran_message).equals(tran_mes_suc))
+        if (jsonObj.containsKey(tran_message) && jsonObj.getStr(tran_message).equals(tran_mes_suc))
         {
             String output = jsonObj.getStr("output");
-            if(StringUtil.isNotEmpty(output))
+            if (StringUtil.isNotEmpty(output))
             {
                 try
                 {
                     JSONArray resAry = JSONUtil.parseArray(output);
                     cr.setVals(resAry);
-                }catch (Exception e){ // 1个参数
+                } catch (Exception e)
+                { // 1个参数
                     cr.setVals(new JSONArray().put(output));
                 }
             }
             return cr;
         }
         // 失败消息
-        if(jsonObj.containsKey(tran_message)){
+        if (jsonObj.containsKey(tran_message))
+        {
             cr.setMes(jsonObj.getStr(tran_message));
             return cr;
         }
@@ -85,70 +89,84 @@ public class WeFrontService
         return cr;
     }
 
-    public ContractResponse sendTranGetValues(String funcName,List funcParam){
+    public ContractResponse sendTranGetValues(String funcName, List funcParam)
+    {
         String owner = fiscoConfig.getContract().getOwner();
-        return sendTranGetValues(owner,funcName,funcParam);
+        return sendTranGetValues(owner, funcName, funcParam);
     }
 
-    public ContractResponse sendCallGetValues(String to,String funcName,List funcParam){
+    public ContractResponse sendCallGetValues(String to, String funcName, List funcParam)
+    {
         String res = commonReq(to, funcName, funcParam);
         ContractResponse cr = new ContractResponse();
         try
         {
             JSONArray jsonAry = JSONUtil.parseArray(res);
-            if(jsonAry.size() == 1 && jsonAry.getStr(0).contains(callErr_pre)){ // 合约异常
-                cr.setMes(jsonAry.getStr(0).substring(callErr_pre.length()+1));
+            if (jsonAry.size() == 1 && jsonAry.getStr(0).contains(callErr_pre))
+            { // 合约异常
+                cr.setMes(jsonAry.getStr(0).substring(callErr_pre.length() + 1));
             }
-            if(jsonAry.size() !=1){
+            if (jsonAry.size() != 0)
+            {
                 cr.setVals(jsonAry);
             }
-        }catch (Exception e){ // 网络交互异常
+        } catch (Exception e)
+        { // 网络交互异常
             cr.setMes(network_err);
             log.error(JSONUtil.toJsonStr(e));
         }
         return cr;
     }
 
-    public ContractResponse sendCallGetValues(String funcName,List funcParam){
+    public ContractResponse sendCallGetValues(String funcName, List funcParam)
+    {
         String owner = fiscoConfig.getContract().getOwner();
-        return sendCallGetValues(owner,funcName,funcParam);
+        return sendCallGetValues(owner, funcName, funcParam);
     }
 
     public void commonWrite(String funcName, List funcParams)
     {
         String owner = fiscoConfig.getContract().getOwner();
-        commonWrite(owner,funcName,funcParams);
+        commonWrite(owner, funcName, funcParams);
     }
 
-    public  void commonWrite(String callAdd, String funcName, List funcParams)
+    public void commonWrite(String callAdd, String funcName, List funcParams)
     {
         ContractResponse response;
-        if(StringUtil.isNotEmpty(callAdd)){
-            response = sendTranGetValues(callAdd,funcName,funcParams);
-        }else {
-            response = sendTranGetValues(funcName,funcParams);
+        if (StringUtil.isNotEmpty(callAdd))
+        {
+            response = sendTranGetValues(callAdd, funcName, funcParams);
+        } else
+        {
+            response = sendTranGetValues(funcName, funcParams);
         }
-        if(StringUtil.isNotEmpty(response.getMes())){
+        if (StringUtil.isNotEmpty(response.getMes()))
+        {
             throw ContractErrCode.get(response.getMes());
         }
     }
 
-    public ContractResponse commonRead(String callAdd,String funcName,List funcParams){
+    public ContractResponse commonRead(String callAdd, String funcName, List funcParams)
+    {
         ContractResponse response;
-        if(StringUtil.isNotEmpty(callAdd)) {
-            response = sendCallGetValues(callAdd,funcName,funcParams);
-        }else{
-            response = sendCallGetValues(funcName,funcParams);
+        if (StringUtil.isNotEmpty(callAdd))
+        {
+            response = sendCallGetValues(callAdd, funcName, funcParams);
+        } else
+        {
+            response = sendCallGetValues(funcName, funcParams);
         }
-        if(StringUtil.isNotEmpty(response.getMes())){
+        if (StringUtil.isNotEmpty(response.getMes()))
+        {
             throw ContractErrCode.get(response.getMes());
         }
         return response;
     }
 
-    public ContractResponse commonRead(String funcName,List funcParams){
+    public ContractResponse commonRead(String funcName, List funcParams)
+    {
         String owner = fiscoConfig.getContract().getOwner();
-        return  commonRead(owner,funcName,funcParams);
+        return commonRead(owner, funcName, funcParams);
     }
 
 

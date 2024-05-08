@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc228ada-9ed5-4769-93a5-ed29d3e4fe2e" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back-me.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-me.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/qhx/admin/config/fisco/service/WeFrontService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/qhx/admin/config/fisco/service/WeFrontService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,6 +284,7 @@
       <workItem from="1714808777752" duration="141000" />
       <workItem from="1715072600619" duration="11752000" />
       <workItem from="1715094930314" duration="317000" />
+      <workItem from="1715167853192" duration="45000" />
     </task>
     <servers />
   </component>
