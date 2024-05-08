@@ -13,7 +13,7 @@
 
 服务端：SpringBoot、SpringSecurity、Mybatis-plus、Redis、Fisco-Bcos、Druid、Hutool、阿里云OSS
 
-客户端：Vue、Vuex、Vue-router、Element-UI、Echars
+客户端：Vue、axios、Vuex、Vue-router、Element-UI、Echars
 
 ## 安装使用
 
